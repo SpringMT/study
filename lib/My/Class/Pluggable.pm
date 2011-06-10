@@ -21,7 +21,7 @@ sub load_plugins {
     my @plugins = @{$opts->{plugins}};
 
     for my $plugin (@plugins) {
-         my $module =  . $func;
+         my $module = $opts->{search_path}  . $plugin;
          $module->require or return;
     }
     return @plugins;

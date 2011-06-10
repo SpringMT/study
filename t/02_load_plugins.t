@@ -12,7 +12,7 @@ sub is_loaded_module {
     ok( exists $INC{$file}, sprintf('module %s is loaded', $module) );
 }
 
-isa_ok( 'MyApp', 'My::Module::Pluggable' );
+isa_ok( 'MyApp', 'My::Class::Pluggable' );
 can_ok( 'MyApp', qw/load_plugins/ );
 
 my @plugins = MyApp->load_plugins(qw/Foo Bar +Other::Plugins::Baz/);
