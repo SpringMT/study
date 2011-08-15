@@ -24,4 +24,14 @@ Cache::Memcached::Transparent documentation is available as in POD. So you can d
 
 to read the documentation online with your favorite pager.
 
-haruyama.makot
+REFERENCE
+http://cpansearch.perl.org/src/ZIGOROU/Test-Mock-Guard-0.02/lib/Test/Mock/Guard.pm
+http://cpansearch.perl.org/src/TOKUHIROM/Sub-Retry-0.04/lib/Sub/Retry.pm
+http://cpansearch.perl.org/src/ZIGOROU/KeyedMutex-Memcached-0.03/t/basic.t
+http://perl-users.jp/articles/advent-calendar/2009/hacker/19.html
+http://d.hatena.ne.jp/ZIGOROu/20110308/1299605305
+http://d.hatena.ne.jp/tokuhirom/20100618/1276847609
+http://dann.g.hatena.ne.jp/dann/20100320/p2
+https://github.com/dann/p5-test-skip-unlessexistsexecutable/tree/master/lib/Test/Skip
+
+haruyama.makoto
