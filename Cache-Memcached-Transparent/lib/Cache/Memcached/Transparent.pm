@@ -17,6 +17,7 @@ sub new {
     return $self;
 }
 
+#これは修正
 sub init {
     my $self = shift;
     my $args = shift;
