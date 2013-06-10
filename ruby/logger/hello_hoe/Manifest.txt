@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/hello_hoe
+lib/hello_hoe.rb
+test/test_hello_hoe.rb
