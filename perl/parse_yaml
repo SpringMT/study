@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use YAML::Syck;
+use Router::Simple;
+use Data::Dumper;
+#use Get::Opt;
+
+my ( $key, $file ) =  @ARGV;
+
+#my $config = LoadFile( $file );
+
+my $data;
+while ( my $line = <DATA> ) {
+    $data = $data . $line;
+}
+print $data;
+my @config = Load($data);
+print @config;
+my $router = Router::Simple->new();
+
+#if ( $key ) {
+#    for my $r ( @$config ) {
+#        print Dumper( $r->{$key} );
+#    }
+#}
+
+__DATA__
+
+---
+path: test
+  controller: 'Test'
+  action:     'view'

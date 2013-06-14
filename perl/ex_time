@@ -1,0 +1,44 @@
+#!/usr/bin/env perl -l
+use strict;
+use warnings;
+
+use Time::Local;
+use DateTime;
+my $zone = 'UTC';
+my $time = $ARGV[0] || time();
+
+if ( $time =~ m{^(\d{4})/(\d{2})/(\d{2})-(\d{2}):(\d{2}):(\d{2})$} ) {
+    print("localtime2unixtime");
+    print("$time");
+    print( timelocal($6, $5, $4, $3, $2-1, $1-1900) );
+    print("GMT");
+    my $dt = DateTime->new(
+        time_zone => $zone,
+        year      => $1,
+        month     => $2,
+        day       => $3,
+        hour      => $4,
+        minute    => $5,
+        second    => $6
+    );
+    print($dt->epoch);
+    exit;
+}
+
+my( $sec, $min, $hh, $dd, $mm, $yy, $weak, $yday, $opt ) = localtime($time);
+$yy+=1900; $mm +=1;
+print("localtime");
+print(time);
+printf("%04d/%02d/%02d %02d::%02d::%02d\n",
+        $yy, $mm, $dd, $hh, $min, $sec);
+#my $dt = DateTime->from_epoch( time_zone => $zone, epoch => $time );
+print("GMT");
+#print($dt->strftime("%Y/%m/%d %H:%M:%S %b %a"));
+my @MON  = qw( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec );
+my @WDAY = qw( Sun Mon Tue Wed Thu Fri Sat );
+my( $sec_g, $min_g, $hour_g, $mday_g, $mon_g, $year_g, $wday_g ) = gmtime($time);
+$year_g += 1900;
+
+printf( "%s, %02d-%s-%04d %02d:%02d:%02d GMT \n",
+        $WDAY[$wday_g], $mday_g, $MON[$mon_g], $year_g, $hour_g, $min_g, $sec_g );
+
