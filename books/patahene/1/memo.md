@@ -1,4 +1,4 @@
-### 相対アクセス時間
+### 相対アクセス時間(p24)
 Approximate timing for various operations on a typical PC:
 
 execute typical instruction	1/1,000,000,000 sec = 1 nanosec
