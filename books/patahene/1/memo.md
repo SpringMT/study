@@ -15,3 +15,6 @@ HDDから連続した1MBの領域読み出し | 20,000,000 nanosec | 50MB/s
 http://norvig.com/21-days.html#answer
 https://speakerdeck.com/fujiwara3/isucon-summer-school-1?slide=21
 https://qiita.com/awakia/items/c8ada6c8101efe2de561
+
+
+## Cのコード
