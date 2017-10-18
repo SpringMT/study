@@ -16,5 +16,8 @@ http://norvig.com/21-days.html#answer
 https://speakerdeck.com/fujiwara3/isucon-summer-school-1?slide=21
 https://qiita.com/awakia/items/c8ada6c8101efe2de561
 
+https://twitter.com/srigi/status/917998817051541504
+
+
 
 ## Cのコード
