@@ -9,3 +9,12 @@ Makefile.old
 nytprof.out
 MANIFEST.bak
 *.sw[po]
+**/vendor/**
+**/node_modules/**
+*.o
+*.d
+*.dSYM
+*.log
+
+**/target/**
+.idea
